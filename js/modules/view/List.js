@@ -2,6 +2,7 @@ var App = App || {};
 App.View = App.View || {};
 
 App.View.List = Backbone.View.extend({
+    initialize: function() {},
     template: _.template('\
         <div class="row">\
             <div class="col-sm-12">\

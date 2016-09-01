@@ -2,10 +2,10 @@ var App = App || {};
 App.View = App.View || {};
 
 App.View.Index = Backbone.View.extend({
+    initialize: function() {},
     template: _.template('\
         <div class="jumbotron">\
-            <h1>Theme example</h1>\
-            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap</p>\
+            <h1>BackBone-MVC</h1>\
         </div>\
     '),
     render: function() {

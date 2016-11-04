@@ -2,7 +2,9 @@ var App = App || {};
 App.View = App.View || {};
 
 App.View.Detail = Backbone.View.extend({
-    initialize: function() {},
+    initialize: function() {
+        this.listenTo(this.model, 'change', this.render);
+    },
     template: _.template('\
         <div class="page-header">\
             <h1><%= data.title %></h1>\
